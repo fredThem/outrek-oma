@@ -22,7 +22,8 @@
     "server": "serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "pretty:project": "npx prettier --write .",
+    "prettier:repo-fix": "npx prettier --write .",
+    "prettier:repo-check": "npx prettier --check .",
     "ignore-sync": "ignore-sync ."
   },
   "eslintConfig": {
