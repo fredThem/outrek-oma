@@ -1,10 +1,10 @@
 const person = {
-  name: 'lola',
+  name: "lola",
 };
 
 const secondPerson = person;
 const thirdPerson = { ...person };
 
-person.name = 'Fred';
+person.name = "Fred";
 console.log(secondPerson);
 console.log(thirdPerson);

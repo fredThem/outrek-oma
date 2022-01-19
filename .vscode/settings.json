@@ -1,6 +1,7 @@
 {
-    "html.format.wrapAttributes": "force-aligned",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true
+  "html.format.wrapAttributes": "force-aligned",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "prettier.configPath": "./.prettierrc.json"
 }
