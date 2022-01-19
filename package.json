@@ -9,9 +9,10 @@
     "prettier:repo-check": "npx prettier --check .",
     "prettier:repo-fix": "npx prettier --write .",
     "server": "serve -s build",
+    "test": "react-scripts test",
     "sort-packageJson": "npx sort-package-json",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "prepare": "husky install"
   },
   "browserslist": {
     "production": [
@@ -47,7 +48,12 @@
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
     "ignore-sync": "^4.0.0",
+    "lint-staged": "^12.2.0",
     "prettier": "2.5.1"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
