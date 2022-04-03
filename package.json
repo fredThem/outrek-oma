@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
+    "build-storybook": "build-storybook -s public",
     "eject": "react-scripts eject",
     "ignore-sync": "ignore-sync .",
     "prepare": "husky install",
@@ -12,9 +13,8 @@
     "server": "serve -s build",
     "sort-packageJson": "npx sort-package-json",
     "start": "react-scripts start",
-    "test": "react-scripts test",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "test": "react-scripts test"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
@@ -31,6 +31,18 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
     ]
   },
   "dependencies": {
@@ -65,17 +77,5 @@
     "lint-staged": "^12.2.0",
     "prettier": "2.5.1",
     "webpack": "^5.71.0"
-  },
-  "eslintConfig": {
-    "overrides": [
-      {
-        "files": [
-          "**/*.stories.*"
-        ],
-        "rules": {
-          "import/no-anonymous-default-export": "off"
-        }
-      }
-    ]
   }
 }
