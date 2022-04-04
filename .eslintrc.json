@@ -44,10 +44,9 @@
         "tsx": "never"
       }
     ],
-    // "import/no-default-export": 2,
-    // "react/display-name": "off",
-    // "react/jsx-props-no-spreading": "off",
-    // "react/prop-types": "off"
+    "react/display-name": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off"
   },
   "settings": {
     "import/resolver": {
