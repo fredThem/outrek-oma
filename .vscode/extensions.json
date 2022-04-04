@@ -1,5 +1,6 @@
 {
     "recommendations": [
-        "raymondcamden.htmlescape-vscode-extension"
+        "raymondcamden.htmlescape-vscode-extension",
+        "DavidAnson.vscode-markdownlint"
     ]
 }
