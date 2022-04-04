@@ -13,7 +13,7 @@
     "prettier:repo-fix": "npx prettier --write .",
     "server": "serve -s build",
     "sort-packageJson": "npx sort-package-json",
-    "start": "react-scripts start",
+    "start": "HTTPS=true react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
     "test": "react-scripts test"
   },
